@@ -114,7 +114,7 @@ nav a {
 /* Servicios Section */
 .servicios {
     text-align: center;
-    padding: 80px 60px;
+    padding: 120px 60px;
     background-color: #f0f8ed;
 }
 
@@ -153,7 +153,7 @@ nav a {
     top: 10px;
     left: 10px;
     width: 30px; /* Ajusta el tamaño según sea necesario */
-    height: 30px; /* Ajusta el tamaño según sea necesario */
+    height: 30px; 
 }
 
 .destacada {
@@ -162,7 +162,7 @@ nav a {
 
 /* Nosotros Section */
 .nosotros {
-    padding: 60px;
+    padding: 100px;
     background-color: #f5f5f5;
 }
 
@@ -190,7 +190,7 @@ nav a {
 }
 
 .texto img {
-    width: 400px; /* Ajusta el tamaño según sea necesario */
+    width: 400px; 
     margin-bottom: 20px;
 }
 
@@ -222,8 +222,8 @@ footer {
 
 /* ¿Cómo Funciona? Section */
 .funciona {
-    padding: 60px;
-    background-color: #fff;
+    padding: 100px;
+    background-color: #F1FAEE;
 }
 
 .funciona h3 {
@@ -240,17 +240,12 @@ footer {
 }
 
 .paso {
-    background-color: #f0f8ed;
+    background-color: #FFFF;
     padding: 20px;
     width: 30%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
-}
-
-.paso img {
-    width: 50px; /* Ajusta el tamaño según sea necesario */
-    margin-bottom: 20px;
 }
 
 .paso h4 {
@@ -265,7 +260,7 @@ footer {
 /* Recomendaciones Section */
 .recomendaciones {
     text-align: center;
-    padding: 80px 60px;
+    padding: 200px 60px;
     background-color: #f0f8ed;
 }
 
@@ -281,7 +276,7 @@ footer {
     flex-wrap: wrap;
 }
 
-.card {
+.card2 {
     background-color: white;
     padding: 20px;
     width: 30%;
@@ -296,13 +291,13 @@ footer {
 }
 
 .card h4 {
-    margin-top: 40px; /* Ajusta según el tamaño de la imagen */
+    margin-top: 40px; 
 }
 
 .icono-recomendacion {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 30px; /* Ajusta el tamaño según sea necesario */
-    height: 30px; /* Ajusta el tamaño según sea necesario */
+    width: 30px; 
+    height: 30px; 
 }
