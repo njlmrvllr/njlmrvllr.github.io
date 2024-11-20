@@ -566,3 +566,12 @@ img {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Añade una sombra más intensa */
 }
 
+/* Clase para el efecto de desvanecido */
+.fade-in {
+    opacity: 0; /* Comienza invisible */
+    transition: opacity 2s ease-in; /* Controla la duración del desvanecido */
+}
+
+.fade-in.visible {
+    opacity: 1; /* Hace visible el texto */
+}

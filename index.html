@@ -26,7 +26,7 @@
     <section class="hero">
        <div class="hero-content"> 
          <h2 class="typing">Cuida la salud de tu perro con ayuda de la tecnología</h2>
-         <p>Detecta enfermedades tempranas y recibe recomendaciones personalizadas para asegurar el bienestar de tu mascota, todo desde una plataforma fácil de usar.</p>
+         <p class="fade-in">Detecta enfermedades tempranas y recibe recomendaciones personalizadas para asegurar el bienestar de tu mascota, todo desde una plataforma fácil de usar.</p>
          <button class="btn-descargar">¡Descargar!</button>
         </div>      
         <img src="assets/images/logo_doggiedoc.png" alt="Ilustración de perro" class="hero-image">
@@ -258,6 +258,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     const target = document.querySelector('.typing');
     typeEffect(target, 50); // 100ms por letra
+});
+// Aplica la clase "visible" al texto con "fade-in" al cargar la página
+document.addEventListener('DOMContentLoaded', () => {
+    const text = document.querySelector('.fade-in');
+    setTimeout(() => {
+        text.classList.add('visible');
+    }, 500); // Retraso opcional antes de que comience el desvanecido
 });
 
     </script>
