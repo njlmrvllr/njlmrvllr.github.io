@@ -12,28 +12,29 @@
             <img src="assets/images/logo_doggiedoc.png" alt="DoggieDoc Logo">
             <h1>DoggieDoc</h1>
         </div>
+        <!-- Botón para el menú en pantallas pequeñas -->
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
         <nav>
             <a href="#servicios1">Servicios</a>
             <a href="#nosotros2">Sobre nosotros</a>
             <a href="#funciona4">¿Cómo Funciona?</a>
             <a href="#recomendaciones3">Recomendaciones</a>
-            <button class="btn-empezar">Contactanos</button>
+            <a href="#contacto5" class="btn-empezar">Contáctanos</a>
         </nav>
     </header>
 
     <section class="hero">
        <div class="hero-content"> 
-         <h2>Cuida la salud de tu perro con ayuda de la tecnología</h2>
+         <h2 class="typing">Cuida la salud de tu perro con ayuda de la tecnología</h2>
          <p>Detecta enfermedades tempranas y recibe recomendaciones personalizadas para asegurar el bienestar de tu mascota, todo desde una plataforma fácil de usar.</p>
          <button class="btn-descargar">¡Descargar!</button>
         </div>      
-    
         <img src="assets/images/logo_doggiedoc.png" alt="Ilustración de perro" class="hero-image">
     </section>
 
     <div class="separador"></div>
 
-    <section class="servicios">
+    <section class="servicios animate">
         <h3 id="servicios1">Servicios</h3>
         <div class="cards-container">
             <div class="card">
@@ -42,93 +43,225 @@
                 <p>Diagnósticos anticipados para evitar problemas graves. Recibe recordatorios de visitas al veterinario y alertas de vacunación.</p>
             </div>
             <div class="card destacada">
-                <img src="assets/images/deteccion.jpg" alt="deteccion" class="icono-servicio">
+                <img src="assets/images/deteccion.jpg" alt="Detección" class="icono-servicio">
                 <h4>Detección de Enfermedades</h4>
-                <p>Utiliza tecnología para identificar síntomas de forma temprana y asegurar la mejor atención posible. </p>
+                <p>Utiliza tecnología para identificar síntomas de forma temprana y asegurar la mejor atención posible.</p>
             </div>
             <div class="card">
-                <img src="assets/images/monitoreo.jpg" alt="monitoreo" class="icono-servicio">
+                <img src="assets/images/monitoreo.jpg" alt="Monitoreo" class="icono-servicio">
                 <h4>Monitoreo diario de la salud</h4>
                 <p>Registra datos de salud como peso, actividad física y más para mantener un control constante del bienestar de tu mascota.</p>
             </div>
         </div>
     </section>
-    
+
     <div class="separador"></div>
 
-    <section class="nosotros">
-        <h3 id="nosotros2">Nosotros somos:</h3>
+    <section class="nosotros animate" id="nosotros2">
+        <h3>Nosotros somos:</h3>
         <div class="contenido-nosotros">
             <div class="texto">
                 <img src="assets/images/logo2.png" alt="DoggieDoc Logo" class="logo-nosotros">
-                <p>DoggieDoc es una plataforma innovadora, disponible en versión móvil y de escritorio, 
-                    desarrollada por estudiantes de la Facultad de Ingeniería de la Universidad Peruana de 
-                    Ciencias Aplicadas. Nuestro objetivo es transformar el cuidado de la salud canina a través de la inteligencia 
-                    artificial y avanzadas técnicas de reconocimiento de patrones. Con DoggieDoc, los dueños de perros pueden detectar de manera 
-                    temprana posibles enfermedades y monitorear la salud diaria de sus mascotas, recibiendo recomendaciones personalizadas. Nos dedicamos a 
-                    simplificar el cuidado de los perros y asegurar que más mascotas vivan vidas más largas y saludables, todo mediante 
-                    herramientas de diagnóstico accesibles y fáciles de usar.</p>
+                <p>DoggieDoc es una plataforma innovadora, desarrollada por estudiantes de la Universidad Peruana de Ciencias Aplicadas. Nuestro objetivo es transformar el cuidado de la salud canina a través de inteligencia artificial y técnicas avanzadas. Simplificamos el cuidado de los perros y aseguramos que vivan vidas más largas y saludables.</p>
             </div>
             <div class="video">
                 <iframe src="https://www.youtube.com/embed/video-id" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
-        <p class="compromiso">Estamos comprometidos con el cuidado de la salud canina.</p>
     </section>
-    
+
     <div class="separador"></div>
 
-    <section class="funciona">
-        <h3 id="funciona4">¿Cómo Funciona?</h3>
+    <section class="funciona animate" id="funciona4">
+        <h3>¿Cómo Funciona?</h3>
         <div class="pasos-container">
             <div class="paso">
                 <h4>#1 Descarga e Instala la App</h4>
-                <p>Obtén DoggieDoc en tu dispositivo móvil o en tu escritorio. La instalación es simple y rápida para que puedas comenzar a cuidar de la salud de tu perro sin demoras.</p>
+                <p>Obtén DoggieDoc en tu dispositivo móvil o escritorio. La instalación es simple y rápida.</p>
             </div>
             <div class="paso">
                 <h4>#2 Crea el Perfil de tu Perro</h4>
-                <p>Ingresa la información básica de tu mascota, incluyendo nombre, raza, edad y cualquier historial médico relevante. Esto ayuda a personalizar las alertas y recomendaciones.</p>
+                <p>Ingresa la información básica de tu mascota, como nombre, raza, edad y cualquier historial médico relevante.</p>
             </div>
             <div class="paso">
                 <h4>#3 Monitoreo Diario</h4>
-                <p>Realiza chequeos diarios e ingresa cualquier cambio en la salud o comportamiento de tu perro. La app analiza estos datos para detectar posibles problemas.</p>
+                <p>Realiza chequeos diarios e ingresa cambios en la salud o comportamiento de tu perro.</p>
             </div>
             <div class="paso">
                 <h4>#4 Recibe Alertas</h4>
-                <p>Si se identifican anomalías, recibirás alertas con detalles sobre el problema y recomendaciones específicas para el cuidado de tu perro.</p>
+                <p>Si se detectan anomalías, recibirás alertas con detalles sobre el problema y recomendaciones específicas.</p>
             </div>
             <div class="paso">
                 <h4>#5 Registra y Sigue la Salud</h4>
-                <p>Lleva un registro continuo de los síntomas y el bienestar de tu perro. Esto te ayuda a monitorear su salud y facilita la consulta con veterinarios si es necesario.</p>
+                <p>Lleva un registro continuo del bienestar de tu perro para monitorear su salud a largo plazo.</p>
             </div>
-
         </div>
     </section>
 
     <div class="separador"></div>
 
-    <section class="recomendaciones">
-    <h3 id="recomendaciones3">Recomendaciones</h3>
-    <div class="cards-container">
-        <div class="card2">
-            <img src="assets/images/recomendacion1.png" alt="Icono de recomendación" class="icono-recomendacion">
-            <h4>Alimentación Balanceada</h4>
-            <p>Asegúrate de brindarle a tu perro una dieta adecuada y equilibrada, basada en su tamaño, raza y edad. Consulta con un veterinario para ajustar la alimentación según sus necesidades y evitar problemas como alergias o sobrepeso.¡El bienestar de tu perro empieza desde su plato!</p>
+    <section class="recomendaciones animate" id="recomendaciones3">
+        <h3>Recomendaciones</h3>
+        <div class="cards-container">
+            <div class="card2">
+                <img src="assets/images/recomendacion1.png" alt="Icono de alimentación" class="icono-recomendacion">
+                <h4>Alimentación Balanceada</h4>
+                <p>Asegúrate de brindarle a tu perro una dieta adecuada y equilibrada, ajustada a sus necesidades.</p>
+            </div>
+            <div class="card2">
+                <img src="assets/images/recomendacion2.jpg" alt="Icono de ejercicio" class="icono-recomendacion">
+                <h4>Ejercicio Diario</h4>
+                <p>Asegúrate de proporcionarle a tu perro actividad física diaria según su nivel de energía.</p>
+            </div>
+            <div class="card2">
+                <img src="assets/images/recomendacion3.png" alt="Icono de hidratación" class="icono-recomendacion">
+                <h4>Hidratación Adecuada</h4>
+                <p>Mantén siempre agua fresca disponible para tu mascota, especialmente en días calurosos.</p>
+            </div>
         </div>
-        <div class="card2">
-            <img src="assets/images/recomendacion2.jpg" alt="Icono de recomendación" class="icono-recomendacion">
-            <h4>Ejercicio Diario</h4>
-            <p>Cada perro necesita actividad física para mantenerse saludable. Asegúrate de proporcionarle el tiempo necesario para paseos o juegos según su nivel de energía.. ¡Un perro activo es un perro feliz!</p>
-        </div>
-        <div class="card2">
-            <img src="assets/images/recomendacion3.png" alt="Icono de recomendación" class="icono-recomendacion">
-            <h4>Hidratación Adecuada</h4>
-            <p>Mantén siempre aguaa fresca disponible para tu mascotas. La hidratación es fundamental, sobre todo en días calurosos o después de largos paseos y sesiones de juego. ¡Un perro bien hidratado es un perro feliz y saludable!</p>
-        </div>
-    </div>
-</section>
+    </section>
 
+    <div class="separador"></div>
+
+    <section class="contacto animate" id="contacto5">
+        <h3>Contáctanos</h3>
+        <p>Estamos aquí para ayudarte con cualquier consulta sobre DoggieDoc. Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+        <form>
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+    </section>
+    
+
+    <!-- Footer -->
     <footer>
+        <p>&copy; 2024 DoggieDoc. Todos los derechos reservados.</p>
+        <div class="footer-links">
+            <a href="#">Política de privacidad</a>
+            <a href="#">Términos de servicio</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="assets/images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="assets/images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="assets/images/x.png" alt="X"></a>
+        </div>
     </footer>
+
+    <!-- JavaScript integrado -->
+    <script>
+        // Script original (tu menú desplegable y modal de contacto)
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log("JavaScript cargado y DOM listo");
+    
+            // Menú desplegable
+            const toggleMenu = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('header nav');
+    
+            if (toggleMenu && nav) {
+                toggleMenu.addEventListener('click', () => {
+                    nav.classList.toggle('open');
+                });
+            }
+    
+            // Modal de contacto
+            const contactButton = document.querySelector('.btn-empezar');
+            const modal = document.querySelector('#contact-modal');
+            const modalClose = document.querySelector('.modal .close');
+    
+            if (contactButton && modal && modalClose) {
+                contactButton.addEventListener('click', () => {
+                    modal.style.display = 'flex';
+                });
+    
+                modalClose.addEventListener('click', () => {
+                    modal.style.display = 'none';
+                });
+    
+                window.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        modal.style.display = 'none';
+                    }
+                });
+            }
+        });
+    
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        const targetPosition = target.offsetTop; // Obtiene la posición del elemento
+        const startPosition = window.pageYOffset; // Posición actual
+        const distance = targetPosition - startPosition; // Distancia a recorrer
+        const duration = 1000; // Duración de la animación en milisegundos (ajústala según desees)
+        let start = null;
+
+        function animation(currentTime) {
+            if (!start) start = currentTime;
+            const timeElapsed = currentTime - start;
+            const run = ease(timeElapsed, startPosition, distance, duration);
+            window.scrollTo(0, run);
+            if (timeElapsed < duration) requestAnimationFrame(animation);
+        }
+
+        // Función de suavizado (easing)
+        function ease(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+        }
+
+        requestAnimationFrame(animation);
+    });
+});
+
+    
+        // Animaciones al hacer scroll
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            },
+            { threshold: 0.1 }
+        );
+    
+        document.querySelectorAll('.animate').forEach(section => {
+            observer.observe(section);
+        });
+
+        function typeEffect(element, speed) {
+    const text = element.textContent;
+    element.textContent = '';
+    let i = 0;
+
+    function type() {
+        if (i < text.length) {
+            element.textContent += text[i];
+            i++;
+            setTimeout(type, speed);
+        }
+    }
+    type();
+}
+
+// Aplica el efecto al cargar la página
+document.addEventListener('DOMContentLoaded', () => {
+    const target = document.querySelector('.typing');
+    typeEffect(target, 50); // 100ms por letra
+});
+
+    </script>
+    
+    
 </body>
 </html>

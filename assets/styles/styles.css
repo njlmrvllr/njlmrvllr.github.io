@@ -220,6 +220,7 @@ footer {
     color: white;
 }
 
+
 /* ¿Cómo Funciona? Section */
 .funciona {
     padding: 100px;
@@ -301,3 +302,267 @@ footer {
     width: 30px; 
     height: 30px; 
 }
+
+
+/* Estilos del botón hamburguesa */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #fff;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header nav.open {
+        display: flex;
+    }
+}
+
+/* Sección de Contacto */
+.contacto {
+    padding: 80px 20px;
+    background-color: #f0f8ed; /* Color de fondo de la sección */
+    text-align: center;
+}
+
+.contacto h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contacto p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contacto form {
+    background-color: #ffffff; /* Fondo del formulario */
+    padding: 30px 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contacto .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contacto label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contacto input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contacto input:focus {
+    border-color: #e63946; /* Resalta el borde al enfocar */
+    outline: none;
+}
+
+.contacto .btn-enviar {
+    background-color: #e63946; /* Botón en rojo */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contacto .btn-enviar:hover {
+    background-color: #d62839;
+}
+
+/* Animaciones de aparición */
+.animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efecto hover para botones */
+button, .btn-empezar, .btn-descargar, .btn-enviar {
+    transition: transform 0.5s ease-in-out;
+}
+
+button:hover, .btn-empezar:hover, .btn-descargar:hover, .btn-enviar:hover {
+    transform: scale(1.1);
+}
+
+/* Ajusta el tamaño de los iconos en el footer */
+footer .social-icons img {
+    width: 30px; /* Ajusta el ancho del icono */
+    height: 30px; /* Ajusta la altura del icono */
+    margin: 0 10px; /* Añade espacio entre los iconos */
+    transition: transform 0.3s ease-in-out; /* Transición para animación suave */
+}
+
+/* Opcional: Animación al pasar el cursor sobre los iconos */
+footer .social-icons img:hover {
+    transform: scale(1.2); /* Agranda el icono un 20% al pasar el cursor */
+}
+/* Estilo de los enlaces en el footer */
+footer .footer-links a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: white; /* Color del texto (rojo suave) */
+    font-size: 0.9rem; /* Ajusta el tamaño de fuente */
+    margin: 0 15px; /* Espaciado entre enlaces */
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out; /* Suaviza los cambios */
+}
+
+footer .footer-links a:hover {
+    color: #d62839; /* Cambia a un rojo más intenso al pasar el cursor */
+    text-shadow: 0 0 5px rgba(214, 40, 57, 0.6); /* Añade un brillo sutil */
+}
+
+footer .footer-links {
+    margin-top: 15px; /* Espaciado entre los enlaces y otros elementos */
+    display: flex;
+    justify-content: center; /* Centra los enlaces */
+    gap: 10px; /* Espacio entre enlaces */
+    flex-wrap: wrap; /* Permite que los enlaces se ajusten en varias líneas en pantallas pequeñas */
+}
+
+/* General: Ajusta las secciones para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Apila los elementos del header */
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        flex-direction: column; /* Cambia a diseño vertical */
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .hero-content {
+        max-width: 100%; /* Ocupa todo el ancho */
+    }
+
+    .hero-image {
+        width: 80%; /* Reduce el tamaño de la imagen */
+        margin: 20px auto;
+    }
+
+    .cards-container, .pasos-container {
+        flex-direction: column; /* Cambia a diseño vertical */
+        gap: 20px;
+    }
+
+    .card, .card2, .paso {
+        width: 90%; /* Ocupan casi todo el ancho */
+        margin: 0 auto; /* Centra las tarjetas */
+    }
+
+    .contenido-nosotros {
+        flex-direction: column; /* Diseño vertical */
+        align-items: center;
+    }
+
+    .nosotros .texto img {
+        width: 100%; /* Ajusta el logo a todo el ancho */
+    }
+
+    .footer-links {
+        flex-direction: column; /* Apila los enlaces del footer */
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center; /* Centra los iconos sociales */
+    }
+}
+/* Estilo del menú en pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Muestra el botón hamburguesa */
+    }
+
+    nav {
+        display: none; /* Oculta el menú por defecto */
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #fff;
+        width: 80%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    nav.open {
+        display: flex; /* Muestra el menú al hacer clic */
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Animación de fade-in con movimiento */
+.animate {
+    opacity: 0;
+    transform: translateY(30px); /* Mueve ligeramente hacia abajo */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate.visible {
+    opacity: 1;
+    transform: translateY(0); /* Devuelve a su posición original */
+}
+/* Efecto hover para las tarjetas */
+.card, .card2 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .card2:hover {
+    transform: translateY(-10px); /* Se eleva ligeramente */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Añade una sombra más intensa */
+}
+
